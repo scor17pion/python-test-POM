@@ -1,7 +1,10 @@
 from selenium.webdriver.common.by import By
 
-class MainPageLocators():
+#class MainPageLocators():
+
+class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
 
 class LoginPageLocators():
     REGISTER_FORM = (By.CSS_SELECTOR, "#register_form")
@@ -13,3 +16,4 @@ class ProductPageLocators():
     BOOK_MSG = (By.CSS_SELECTOR, 'div.alertinner>strong')
     COST = (By.CSS_SELECTOR, '.product_main>.price_color')
     COST_MSG = (By.CSS_SELECTOR, 'div.alertinner>p>strong')
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, '#messages .alert-success')
