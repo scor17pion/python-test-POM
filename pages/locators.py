@@ -5,6 +5,11 @@ from selenium.webdriver.common.by import By
 class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+    BASKET_LINK = (By.XPATH, "/html/body/header/div[1]/div/div[2]/span/a")
+
+class BasketPageLocators():
+    BASKET_FORM = (By.CSS_SELECTOR, "#basket_formset")
+    BASKET_MESS = (By.XPATH, "/html/body/div[2]/div/div[3]/div[2]/p")
 
 class LoginPageLocators():
     REGISTER_FORM = (By.CSS_SELECTOR, "#register_form")
